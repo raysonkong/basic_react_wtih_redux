@@ -1,12 +1,12 @@
 const isLoggedReducer = (state=false, action) => {
     switch(action.type) {
-        case 'DECLASSIFY':
-          return true;
-        case 'CLASSIFY':
+        case 'LOGIN':
+          return state=true;
+        case 'LOGOUT':
+          return state=false;
+        default: 
           return false;
-        default:
-          return state;
     }
-} 
+}
 
 export default isLoggedReducer;

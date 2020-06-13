@@ -10,15 +10,14 @@ export const decrement = () => {
     }
 }
 
-export const declassify = () => {
+export const login = () => {
     return {
-        type: 'DECLASSIFY'
+        type: 'LOGIN'
     }
 }
 
-export const classify = () => {
+export const logout = () => {
     return {
-        type: 'CLASSIFY'
+        type: 'LOGOUT'
     }
 }
-
